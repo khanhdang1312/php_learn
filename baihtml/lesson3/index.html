@@ -1,0 +1,48 @@
+<html>
+	<head>
+		<title>Bai_1-buoi_3</title>
+		<style>
+			.container{
+				width:85%;
+				margin:auto;
+				font-family: 'Nunito';
+				color:gray;
+				font-weight: 500;
+			}
+			input{
+				border-radius:10px;
+				margin-top:20px;
+			}
+			h2{
+			color:lightblue;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<form>
+				<h2>Sign Now!</h2>
+				<label> Your user name </label>
+				<input type="text" required="This flie don't emty!" placeholder="Enter  your user name"size="50"><br>
+				<label> Your password </label>
+				<input type="password" required="This flie don't emty" placeholder="Enter your password" size="40"><br>
+				<label>Email</label>
+				<input type="Email" required="This flie don't emty" placeholder="Enter your email" size="35"><br>
+				<label for="birthday">birthday</label>
+				<input type="date" id="birthday" name="birthday"><br>
+				<label for="list-items">Products</label>
+				<input list="list-items">
+				<datalist id="list-items">
+					<option value="shoes">
+					<option value="adscs">
+					<option value="adsc">
+				</datalist><br>
+				<label>Quantity</label>
+				<input type="number" max="5" min="1"><br>
+				<label>Range</label>
+				<input type="range" max="20" min="10"><br>
+				<input type="submit" value="Sign out">
+			</form>
+		</div>
+	</body>
+</html>
