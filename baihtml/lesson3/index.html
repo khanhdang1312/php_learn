@@ -1,6 +1,6 @@
 <html>
 	<head>
-		<title>Bai_1-buoi_3</title>
+		<title>exerices one</title>
 		<style>
 			.container{
 				width:85%;
@@ -9,9 +9,14 @@
 				color:gray;
 				font-weight: 500;
 			}
-			input{
-				border-radius:10px;
-				margin-top:20px;
+			#inputUsername{
+				width:5em;
+			}
+			#inputPassword{
+				width:4em;
+			}
+			#inputEmail{
+				width:3.7em;
 			}
 			h2{
 			color:lightblue;
@@ -22,14 +27,14 @@
 		<div class="container">
 			<form>
 				<h2>Sign Now!</h2>
-				<label> Your user name </label>
-				<input type="text" required="This flie don't emty!" placeholder="Enter  your user name"size="50"><br>
+				<label> Your username </label>
+				<input type="text" required="This flie don't emty!" placeholder="Enter  your user name " id="inputUsername"><br>
 				<label> Your password </label>
-				<input type="password" required="This flie don't emty" placeholder="Enter your password" size="40"><br>
+				<input type="password" required="This flie don't emty" placeholder="Enter your password" id="inputPassword"><br>
 				<label>Email</label>
-				<input type="Email" required="This flie don't emty" placeholder="Enter your email" size="35"><br>
-				<label for="birthday">birthday</label>
-				<input type="date" id="birthday" name="birthday"><br>
+				<input type="Email" required="This flie don't emty" placeholder="Enter your email" id="inputEmail"><br>
+				<label for="birthday">Birthday</label>
+				<input type="date" name="birthday"><br>
 				<label for="list-items">Products</label>
 				<input list="list-items">
 				<datalist id="list-items">
