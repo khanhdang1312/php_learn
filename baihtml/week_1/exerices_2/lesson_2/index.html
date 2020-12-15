@@ -1,71 +1,19 @@
 <html>
 	<head>
-		<title>exerices one</title>
+		<title>exerices_2</title>
 		<style>
-			.container{
-				width:85%;
-				margin:auto;
-				font-family: 'Nunito';
-				color:gray;
-				font-weight: 500;
+			#video{
+				width:30em;
 			}
-			#inputUsername{
-				margin-top:20px; 
-				width:25em;
-			}
-			#inputPassword{
-				margin-top:20px;
-				width:20em;
-			}
-			#inputEmail{
-				margin-top:20px;
-				width:18em;
-			}
-			#inputBrithday{
-				margin-top:20px;
-				width:15em;
-			}
-			#inputProducts{
-				margin-top:20px;
-				width:15em;
-			}
-			#inputQuantity{
-				margin-top:20px;
-				width:8em;
-			}
-			#inputRange{
-				margin-top:20px;
-			}
-			h2{
-			color:lightblue;
+			#audio{
+				width:30em;
 			}
 		</style>
 	</head>
 	<body>
-		<div class="container">
-			<form>
-				<h2>Sign Now!</h2>
-				<label> Your username </label>
-				<input type="text" required="This flie don't emty!" placeholder="Enter  your user name " id="inputUsername"><br>
-				<label> Your password </label>
-				<input type="password" required="This flie don't emty" placeholder="Enter your password" id="inputPassword"><br>
-				<label>Email</label>
-				<input type="Email" required="This flie don't emty" placeholder="Enter your email" id="inputEmail"><br>
-				<label for="birthday">Birthday</label>
-				<input type="date" name="birthday" id="inputBrithday"><br>
-				<label for="list-items">Products</label>
-				<input list="list-items" id="inputProducts">
-				<datalist id="list-items">
-					<option value="shoes">
-					<option value="adscs">
-					<option value="adsc">
-				</datalist><br>
-				<label>Quantity</label>
-				<input type="number" max="5" min="1" id="inputQuantity"><br>
-				<label>Range</label>
-				<input type="range" max="20" min="10" id="inputRange"><br>
-				<input type="submit" value="Sign out">
-			</form>
-		</div>
+		<h2>Embed video code</h2>
+		<video src="#.mp4" controls id="video"></video>
+		<h2>Embed audio code</h2>
+		<audio src="#.mp3" controls id="audio"></audio>
 	</body>
 </html>
