@@ -1,7 +1,6 @@
 *{
 	box-sizing: border-box;
 	font-family: 'Nunito';
-	color:white;
 }
 .container{
 	width:80%;
@@ -25,6 +24,7 @@ nav{
 	text-align:center; 
 }
 .navbar_li a{
+	color:black;
 	padding: 10px;
 	text-decoration: none;	
 }
@@ -36,6 +36,7 @@ nav{
 	width:33%;
 }
 section{
+	color:white;
 	background-color:rgba(141,41,41,0.8);
 }
 #avatar{
