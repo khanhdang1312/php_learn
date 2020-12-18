@@ -1,0 +1,49 @@
+*{
+	font-family:'Nunito';
+}
+body{
+	background-color:gray;
+}
+.container{
+	text-align:center;
+	font-weight: 700;
+}
+.pharagrahp-box{
+	width:50%;
+	background-color:white;
+	border: 3px dotted black;
+	text-align:left;
+	padding:10px;
+	margin:auto;
+}
+.li-center{
+	text-align:center;
+	margin:auto;
+	font-style:initial;
+	list-style-type: none;
+
+}
+.p-list{
+	list-style-type:none;
+}
+.p-box-item{
+	padding:10px;
+}
+.p-box-link{
+	border-radius:5px;
+	text-decoration:none;
+	padding:5px;
+	background-color:blue;
+	font-weight:700;
+	font-size:17px;
+	color:white;
+}
+footer{
+	text-align: center;
+	margin-top:20px;
+	width:25%;
+	background-color:lightblue;
+	border:1px solid black;
+	border-radius:10px;
+	font-style:italic;
+}
