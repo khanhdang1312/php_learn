@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exercise3</title>
+	<meta charset="utf-8">
+	<style>
+		hr{
+			border: double;
+			position: relative;
+			left: -13px;
+		}
+	</style>
+</head>
+<body>
+	<div style="width: 80%;">
+		<hr style="border: 1px solid gray; position: relative; top: 27px; width: 91.5%; margin-left: 16px;">
+		<h1>Application for permission to date my daughter</h1>
+		<p><strong>Note:</strong> Formm is to be completed at least 21 days prior to date</p>
+		<form>
+			<fieldset style="width: 90%">
+				<legend>Personal Details</legend>
+				<label for="name">Name:</label>
+				<input id="name" name="name" type="text" placeholder="Enter name here"></input><br>
+				<label for="address">Address:</label>
+				<input id="address" name="address" type="address" placeholder="Enter address here"></input><br>
+				<label for="E-mail">E-mail:</label>
+				<input id="E-mail" name="email" type="email" placeholder="Enter email here"></input><br>
+				<label for="phonenumber">Phone Number:</label>
+				<input id="phonenumberer" name="phone_num" type="number" placeholder="Enter 10 digit number" size="10" min="0"></input><br>
+				<label for="iq">IQ</label>
+				<input id="iq" name="iq" type="number" placeholder="Enter IQ here" min="0"></input><br>
+				<label for="gender">Gender:</label><br><br>
+				<input type="radio" id="male" name="gender" value="male">
+		  		<label for="male">Male</label><br>
+				<input type="radio" id="female" name="gender" value="female">
+				<label for="female">Female</label><br>
+				<input type="radio" id="other" name="gender" value="other">
+				<label for="other">Other</label><br><br>
+				<label for="date">Date of Proposed Outing:</label>
+				<input type="date" name="date">
+				<hr>
+				<label for="check">Check All That Apply</label><br><br>
+				<input type="checkbox" name="check" value="Apply">
+				<label for="Apply">I have tattoos and/or piercings</label><br>
+				<input type="checkbox" name="check" value="Apply">
+				<label for="Apply">I am more than 2 years older than my daughter</label><br>
+				<input type="checkbox" name="check" value="Apply">
+				<label for="Apply">I own a panel van or V8 ute</label><br>
+				<input type="checkbox" name="check" value="Apply">
+				<label for="Apply">I work full-time</label><br>
+				<input type="checkbox" name="check" value="Apply">
+				<label for="Apply">My parents are rich</label><br>
+				<input type="checkbox" name="check" value="Apply">
+				<label for="Apply">Is the date at a well lit public location</label><br><br>
+				<hr>
+				<label for="menu" >Political Persuasion:</label>
+		        <select id="menu" name="menu" title="Left Wing">
+		            <option value="leftwing">Left Wing</option>
+		        </select>
+		        <label for="menu1" >Education Level Completed:</label>
+		        <select id="menu1" name="menu1" title="University">
+		            <option value="university">Univercity</option>
+		        </select><br>
+			</fieldset>
+			<fieldset style="width: 90%">
+				<legend>Essay Section</legend>
+				<p>In 50 words or more explain why you want to date my daughter</p>
+				<textarea name="message" style="width:500px; height:50px;" placeholder="Enter Text Here"></textarea>
+				<p>Please upload contact details for 2 references</p>
+				<textarea name="message" style="width:500px; height:50px;" placeholder="Enter Text Here"></textarea><br>
+				<label for="upfile">Upload Police Clearance Certificate, Bank Statement and Medical Certifiates here:</label>
+				<input type="file" name="upfile" value="Choose File">
+			</fieldset>
+			<input type="submit" name="submit" value="Send your application">
+		</form>
+	</div>
+</body>
+</html>

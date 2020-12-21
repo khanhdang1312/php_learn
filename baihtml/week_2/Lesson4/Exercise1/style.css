@@ -1,0 +1,39 @@
+h1{
+	color: red;
+	font-family: Arial;
+}
+body{
+	background-image: url(https://png.pngtree.com/thumb_back/fw800/background/20190223/ourmid/pngtree-kraft-paper-texture-papertexturepaperbackground-image_84899.jpg);
+    background-repeat: round;
+    background-size: cover;
+    font-family: Verdana;
+}
+.header{
+	background-color: pink;
+	text-align: center;
+	width: 75%;
+	margin: auto;
+}
+.header ul{
+	list-style-type: none;
+	padding: 15px;
+	border: 1px solid black;
+}
+.header a{
+	color: blue;
+	font-family: Courier New;
+	display: inline;
+	background-color: yellow;
+	border: 1px solid black;
+	padding: 5px;
+}
+.header a:hover{
+	background-color: purple;
+	color: pink;
+	text-decoration: none;
+}
+.logo{
+	text-align: center;
+	background-color: yellow;
+	border: 1px dotted black;
+}

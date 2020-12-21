@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exercise2</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<form>
+		<h1 style="color: purple">A Simple Form</h1>
+		<h2 style="color: #FF4E5D">Form fundamental</h2>
+		<fieldset>
+			<legend> Customer Info </legend>
+				<label for="fullname">Name:</label>
+				<input id="fullname" name="name" type="text" placeholder="Enter your name" size="50"></input><br>
+				<label for="Telephone">Telephone:</label>
+				<input id="Telephone" name="phone_num" type="number" placeholder="Patterm: 1-234-567-8910" size="50"></input><br>
+				<label for="E-mail">E-mail address:</label>
+				<input id="E-mail" name="email" type="email" placeholder="Enter your email address" size="50"></input><br>
+				<label for="gender">Gender:</label>
+				<input type="radio" id="male" name="gender" value="male">
+  				<label for="male">Male</label>
+				<input type="radio" id="female" name="gender" value="female">
+			 	<label for="female">Female</label><br>
+				<label for="hobbies">Hobbies:</label>
+				<input type="checkbox" name="hobbies" value="badminton">
+				<label for="badminton">Badminton</label>
+				<input type="checkbox" name="hobbies" value="football">
+				<label for="football">Football</label>
+				<input type="checkbox" name="hobbies" value="basketball">
+				<label for="basketball">Basketball</label>
+		</fieldset>
+		<fieldset>
+			<legend>Books</legend>
+				<label for="bookname">Name:</label>
+				<input id="bookname" name="book_name" type="text" size="50"></input>
+				<label for="quantity">Quantity (Maximum5):</label>
+  				<input type="number" id="quantity" name="quantity" min="1" max="5">
+		</fieldset>
+			<input type="submit" value="Submit">
+			<input type="reset" value="Reset">
+	</form>
+</body>
+</htm>
