@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exercise1</title>
+	<meta charset="utf-8">
+	<style>
+		#full_name{
+			size:50px;
+		}
+	</style>
+</head>
+<body>
+	<h1>Thanh toán</h1>
+	<form action="" method="post">
+		<label for="fullname">Tên đầy đủ</label>
+		<input id="full_name" type="text" name="name" placeholder="Nhập tên đầy đủ của người mua " ><br><br>
+		<label for="password">Password</label>
+		<input type="password" name="password" placeholder="Nhập password"><br><br>
+		<label for="email">Email</label>
+		<input type="email" name="email" placeholder="Nhập email"><br><br>
+		<label for="date">Ngày sinh</label>
+		<input type="date" name="date"><br><br>
+		<label for="#">Mặt hàng mua</label>
+		<input list="products" name="products" id="products">
+		<datalist id="products">
+			<option value="Shoes">
+			<option value="Socks">
+			<option value="Shirt">
+			<option value="Sandals">
+			<option value="Trousers">
+		</datalist><br><br>
+		<label for="#">Số lượng mua</label>
+		<input type="number" name="quatity" min="1" max="5"><br><br>
+		<label for="#">Bán kính vận chuyển</label>
+		<input type="range" name="ranger"><br><br>
+		<input type="submit" name="Đăng ký" value="sign off">
+	</form>
+</body>
+</html>

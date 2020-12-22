@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exercise2</title>
+	<meta charset="utf-8">
+	<style>
+		.title{
+			color:purple;
+		}
+		.small_title{
+			color:#FF4E5D;
+		}
+		#full_name{
+			size:50px;
+		}
+		#tele_phone{
+			size:50px;
+		}
+		#e-mail{
+			size:50px;
+		}
+		#book_name{
+			size:50px;
+		}
+	</style>
+</head>
+<body>
+	<form action="" method="post">
+		<h1 class="title">A Simple Form</h1>
+		<h2 class="small_title">Form fundamental</h2>
+		<fieldset>
+			<legend> Customer Info </legend>
+				<label for="full_name">Name:</label>
+				<input id="full_name" name="full_name" type="text" placeholder="Enter your name"></input><br>
+				<label for="Tele_phone">Telephone:</label>
+				<input id="Tele_phone" name="phone_number" type="number" placeholder="Patterm: 1-234-567-8910"></input><br>
+				<label for="E-mail">E-mail address:</label>
+				<input id="e-mail" name="email" type="email" placeholder="Enter your email address"></input><br>
+				<label for="gender">Gender:</label>
+				<input type="radio" id="male" name="gender" value="male">
+  				<label for="male">Male</label>
+				<input type="radio" id="female" name="gender" value="female">
+			 	<label for="female">Female</label><br>
+				<label for="hobbies">Hobbies:</label>
+				<input type="checkbox" name="hobbies" value="badminton">
+				<label for="badminton">Badminton</label>
+				<input type="checkbox" name="hobbies" value="football">
+				<label for="football">Football</label>
+				<input type="checkbox" name="hobbies" value="basketball">
+				<label for="basketball">Basketball</label>
+		</fieldset>
+		<fieldset>
+			<legend>Books</legend>
+				<label for="book_name">Name:</label>
+				<input id="bookname" name="book_name" type="text" size="50"></input>
+				<label for="quantity">Quantity (Maximum5):</label>
+  				<input type="number" id="quantity" name="quantity" min="1" max="5">
+		</fieldset>
+			<input type="submit" value="Submit">
+			<input type="reset" value="Reset">
+	</form>
+</body>
+</htm>
