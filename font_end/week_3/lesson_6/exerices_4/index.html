@@ -1,0 +1,39 @@
+<html>
+	<head>
+		<title>exerices_1</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<header>
+			<div class="col">
+				<lable>1stNum:</lable>
+				<input id="1stNum" type="text" name="1stNum" placeholder="Enter 1st number ..."><br>
+				<label>2ndNum:</label>
+				<input id="2ndNum" type="text" name="2ndNum" placeholder="Enter 2nd number..."><br>
+				<button type="button" onclick='document.getElementById("result").innerHTML=UCLN(firstNum,secondNum)'>result</button>
+				<p>The result is: <span id="result"></span><p>
+			</div>
+		</header>
+		<script>
+			var firstNum=document.getElementById("1stNum").value;
+			var secondNum=document.getElementById("2ndNum").value;
+			firstNum*=1;
+			secondNum*=1;
+			function UCLN(firstNum,secondNum){//input to 2 value 
+				if(firstNum==secondNum){
+					return firstNum;
+				}
+				while(firstNum!=secondNum){
+					if(firstNum>secondNum){
+						firstNum-=secondNum;
+					}
+					else{
+						secondNum-=firstNum;
+					}
+				}
+				return firstNum//or secondNum
+			}
+		</script>
+	</body>
+</html>

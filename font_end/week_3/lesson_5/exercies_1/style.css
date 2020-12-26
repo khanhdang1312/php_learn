@@ -15,7 +15,6 @@ header{
 	height:auto;
 }
 .nav_branch{
-	width:25%;
 	text-decoration: none;
 	font-size:40px;
 	color:white;
@@ -25,14 +24,15 @@ header{
 	text-align:right;
 	font-size:10px;
 	float:right;
-	width:75%;
+	width:5
+	5%;
 	list-style-type:none;
 	overflow:hidden;
 	clear:both;
 }
 .nav_items{
 	text-align: left;
-	width:10%;
+	width:15%;
 	display: inline-block;
 }
 .nav_link{
@@ -55,7 +55,7 @@ header{
 .link_hover:hover{
 	color:black;
 }
-.container_header{
+.introduce_header{
 	margin-top:120px; 
 	text-align: center;
 }
