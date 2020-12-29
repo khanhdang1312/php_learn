@@ -6,27 +6,36 @@
 	</head>
 	<body>
 		<header>
-			<div class="col">
-				<lable>1stNum:</lable>
-				<input id="1stNum" type="text" name="1stNum" placeholder="Enter 1st number ..."><br>
-				<label>2ndNum:</label>
-				<input id="2ndNum" type="text" name="2ndNum" placeholder="Enter 2nd number..."><br>
-				<button type="button" id="multiply" onclick='document.getElementById("result").innerHTML=multiply(firstNum,secondNum)'>Multiply</button>
-				<button type="button" id="divide" onclick='document.getElementById("result").innerHTML=divide(firstNum,secondNum)'>Divide</button>
-				<p>The result is: <span id="result"></span><p>
-			</div>
+			<form action="." method="post">
+				<div class="col">
+					<lable>1stNum:</lable>
+					<input id="1stNum" type="text" name="1stNum" placeholder="Enter 1st number ..."><br>
+					<label>2ndNum:</label>
+					<input id="2ndNum" type="text" name="2ndNum" placeholder="Enter 2nd number..."><br>
+					<button type="button" id="multiply" onclick='multiply()'>Multiply</button>
+					<button type="button" id="divide" onclick='divide()'>Divide</button>
+					<p>The result is: <span id="result"></span><p>
+				</div>
+			</form>
 		</header>
 		<script>
-			var firstNum=document.getElementById("1stNum").value;
-			var secondNum=document.getElementById("2ndNum").value;
-			alert(firstNum);
-			firstNum*=1;
-			secondNum*=1;
-			function multiply(firstNum,secondNum){
-				return (parseFloat(firstNum)*parseFloat(secondNum));
+			function multiply(){
+				var firstNum=document.getElementById("1stNum").value;
+				var secondNum=document.getElementById("2ndNum").value;
+				if(isNaN(firstNum)||isNaN(secondNum)){
+					alert(' value is not a number!');
+				}
+				var result=firstNum*secondNum;
+				document.getElementById("result").innerHTML=result;
 			}
-			function divide(firstNum,secondNum){
-				return (parseFloat(firstNum)/parseFloat(secondNum));
+			function divide(){
+				var firstNum=document.getElementById("1stNum").value;
+				var secondNum=document.getElementById("2ndNum").value;
+				if(isNaN(firstNum)||isNaN(secondNum)){
+					alert(' value is not a number!');
+				}
+				var result=firstNum/secondNum;
+				document.getElementById('result').innerHTML=result;
 			}
 		</script>
 	</body>
