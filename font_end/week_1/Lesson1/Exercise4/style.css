@@ -1,0 +1,23 @@
+.headline{
+			color:red;
+}
+.container{
+	background-color: green;
+}
+.title-white{
+	color:white;
+}
+.img-continuing{
+	width:3em;
+	height:1em;
+}
+.img-stanford{
+	text-align:center;
+	background-color:yellow;
+}
+.copy-right-text{
+	font-size:12px;
+}
+.copy-right-img{
+	width:10px;
+}

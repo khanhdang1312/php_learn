@@ -1,20 +1,11 @@
-body{
-	width: 85%;
-	background-color: #F6F3E5;
+.container{
+	width: 100%;
+	background-color: white;
 	margin: auto;
 	margin-top: 50px;
 	text-align: justify;
 }
-.container{
-	background-color: white;
-	width: 100%;
-	padding: 4px 0 0 0;
-}
-div{
-	width: 100%;
-	display: inline-block;
-	overflow: auto;
-}
+
 .article{
 	width: 69%;
     background-color: white;
@@ -22,10 +13,11 @@ div{
     padding: 7px 12px;
 }
 .siderbar{
+	background-color: #ffffcc;
 	width: 26%;
     float: left;
     padding: 7px 12px;
 }
-hr{
+.line-width-98{
 	width: 99%;
 }

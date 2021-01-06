@@ -1,0 +1,17 @@
+body{
+	font-family:'Nunito';
+}
+#fullName{
+	text-align: center;
+	font-weight: 700;
+}
+#local{
+text-align: center;
+}
+.career-infor{
+	font-weight: 700;
+	border-bottom: 2px solid gray;
+}
+.date-left{
+	float:right;
+}

@@ -1,0 +1,15 @@
+.container{
+			background-color: green;
+}
+.headline{
+	color:red;
+}	
+.title-white{
+	color:white;
+}
+.copy-right-text{
+	font-size:12px;
+}
+.copy-right-img{
+	width:10px;
+}

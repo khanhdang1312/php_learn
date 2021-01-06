@@ -1,0 +1,19 @@
+.table-fruit{
+			width: 100%;
+			border-collapse: collapse;
+}
+.table-fruit td,.table-fruit tr{
+	text-align: left;
+	width: 80%;
+	font-weight: 550;
+	font-size: 18px;
+	border:2px solid black;
+}
+.table-fruit-image{
+	width: 200px;
+	height: 120px;
+}
+.container{
+	width: 50%;
+	margin: auto;
+}

@@ -2,29 +2,20 @@
 <html>
 <head>
 	<title>Exercise5</title>
-	<style>
-	.title{
-		margin: 0;
-    	padding: 12px 0 0 0;
-    	font-size: .94em;
-		}
-	th, td ,table{
-		border: 1px solid black;
-		padding: 3px 3px 3px 3px;
-}
-</style>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-	<h5 class="title">Simple from with name and age</h5>
+	<h5 class="sub-heading">Simple from with name and age</h5>
 	<form action="" method="post">
 		<label for="name">Name:</label>
-		<input id="name" name="name" type="text" placeholder="Albert" size="20"></input><br>
+		<input id="name" name="name" type="text" placeholder="Albert"><br>
 		<label for="age" >Age:</label>
-		<input id="age" name="age" type="number" placeholder="39" min="12" max="100"></input>
+		<input id="age" name="age" type="number" placeholder="39" min="12" max="100">
 		<input type="submit" value="Add">
 	</form>	
 	<h5>Current data in the system...</h5>
-	<table>
+	<table class="table-infor">
 	  	<tr>
 	     	<th></th>
 	     	<th>Name</th>

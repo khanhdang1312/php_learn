@@ -1,40 +1,41 @@
+<!DOCTYPE html>
 <html>
-	<head>
-		<title>exerices_6</title>
-		<meta charset="utf-8">
-	</head>
-	<body>
-		<p id='outPut' onclick='main()'>click me!</p>
-		<script>
-			function check(){
-				var array_1=[3,4,33,1,31234,4],array_2=[4434,5,43,2,8,7,6],array_check=[];
-				for (var i=0;i<array_1.length+1;i++){// thieu ham kiem tra xem trrong mang co so trung nhau hay khong neu co thi chi tra ve 1 gia tri cua i;
-					for (var j=0;j<length+1;j++){
-						if(array_1[i]==array_2[j]){
-							array_check.push(array_1[i]);
-						}
+<head>
+	<title>exerices_6</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<p id='outPut' onclick='main()'>click me!</p>
+	<script>
+		function check(){
+			var array_1=[3,4,33,1,31234,4],array_2=[4434,5,43,2,8,7,6],array_check=[];
+			for (var i=0;i<array_1.length+1;i++){// thieu ham kiem tra xem trrong mang co so trung nhau hay khong neu co thi chi tra ve 1 gia tri cua i;
+				for (var j=0;j<length+1;j++){
+					if(array_1[i]==array_2[j]){
+						array_check.push(array_1[i]);
 					}
 				}
-				for (var i=0;i<array_1.length+1;i++){
-					for (var j=0;j<array_check.length+1;j++){
-						if(array_1[i]==array_check[j]){
-							array_1.splice(i-1,1);
-						}
-					}
-				}
-				for (var i=0;i<array_2.length+1;i++){
-					for (var j=0;j<array_check.length+1;j++){
-						if(array_2[i]==array_check[j]){
-							array_1.splice(i-1,1);
-						}
-					}
-				}
-				console.log(array_1);
-				console.log(array_2);
 			}
-			function main(){
-				check();
+			for (var i=0;i<array_1.length+1;i++){
+				for (var j=0;j<array_check.length+1;j++){
+					if(array_1[i]==array_check[j]){
+						array_1.splice(i-1,1);
+					}
+				}
 			}
-		</script>
-	</body>
+			for (var i=0;i<array_2.length+1;i++){
+				for (var j=0;j<array_check.length+1;j++){
+					if(array_2[i]==array_check[j]){
+						array_1.splice(i-1,1);
+					}
+				}
+			}
+			console.log(array_1);
+			console.log(array_2);
+		}
+		function main(){
+			check();
+		}
+	</script>
+</body>
 </html>

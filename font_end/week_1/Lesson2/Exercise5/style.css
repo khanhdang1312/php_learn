@@ -1,0 +1,10 @@
+.sub-heading{
+	margin: 0;
+	padding: 12px 0 0 0;
+	font-size: .94em;
+}
+
+.table-infor,.table-infor td{
+	border: 1px solid black;
+	padding: 3px;
+}

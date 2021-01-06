@@ -3,37 +3,13 @@
 <head>
 	<title>Exercise3</title>
 	<meta charset="utf-8">
-	<style>
-		hr{
-			border: double;
-			position: relative;
-			left: -13px;
-			border: 1px solid gray;
-			position: relative;
-			top: 27px;
-			width: 91.5%;
-			margin-left: 16px;
-		}
-		.container{
-			width: 80%;
-		}
-		.note_box{
-			width:500px;
-			height:50px;
-		}
-		.contact_box{
-			width:500px;
-			height:50px;
-		}
-	</style>
 </head>
 <body>
 	<div class="container">
-		<hr>
 		<h1>Application for permission to date my daughter</h1>
 		<p><strong>Note:</strong> Formm is to be completed at least 21 days prior to date</p>
 		<form>
-			<fieldset style="width: 90%">
+			<fieldset class="form-content">
 				<legend>Personal Details</legend>
 				<label for="name">Name:</label>
 				<input id="name" name="name" type="text" placeholder="Enter name here"></input><br>
@@ -42,7 +18,7 @@
 				<label for="E-mail">E-mail:</label>
 				<input id="E-mail" name="email" type="email" placeholder="Enter email here"></input><br>
 				<label for="phonenumber">Phone Number:</label>
-				<input id="phonenumberer" name="phone_num" type="number" placeholder="Enter 10 digit number" size="10" min="0"></input><br>
+				<input id="phonenumberer" name="phone_num" type="number" placeholder="Enter 10 digit number"  min="0"></input><br>
 				<label for="iq">IQ</label>
 				<input id="iq" name="iq" type="number" placeholder="Enter IQ here"></input><br>
 				<label for="gender">Gender:</label><br><br>
@@ -78,12 +54,12 @@
 		            <option value="university">Univercity</option>
 		        </select><br>
 			</fieldset>
-			<fieldset style="width: 90%">
+			<fieldset class="form-content">
 				<legend>Essay Section</legend>
 				<p>In 50 words or more explain why you want to date my daughter</p>
-				<textarea name="note_box" class="note_box" placeholder="Enter Text Here"></textarea>
+				<textarea name="cause-write" class="cause-write" placeholder="Enter Text Here"></textarea>
 				<p>Please upload contact details for 2 references</p>
-				<textarea name="contact_box" class="contact_box" placeholder="Enter Text Here"></textarea><br>
+				<textarea name="contact-write" class="contact-write" placeholder="Enter Text Here"></textarea><br>
 				<label for="upfile">Upload Police Clearance Certificate, Bank Statement and Medical Certifiates here:</label>
 				<input type="file" name="upfile" value="Choose File">
 			</fieldset>

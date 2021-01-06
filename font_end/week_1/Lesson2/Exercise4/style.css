@@ -1,0 +1,7 @@
+.table-local td{
+  margin:auto;
+  border:1px solid black;
+  border-collapse:collapse;
+  font-size:1.3em;
+  padding: 10px 10px 10px 10px;
+}

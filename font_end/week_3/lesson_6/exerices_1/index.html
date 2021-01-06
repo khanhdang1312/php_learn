@@ -1,42 +1,54 @@
+<!DOCTYPE html>
 <html>
-	<head>
-		<title>exerices_1</title>
-		<meta charset="UTF-8">
-		<link rel="stylesheet" href="style.css">
-	</head>
-	<body>
-		<header>
-			<form action="." method="post">
-				<div class="col">
-					<lable>1stNum:</lable>
-					<input id="1stNum" type="text" name="1stNum" placeholder="Enter 1st number ..."><br>
-					<label>2ndNum:</label>
-					<input id="2ndNum" type="text" name="2ndNum" placeholder="Enter 2nd number..."><br>
-					<button type="button" id="multiply" onclick='multiply(this)'>Multiply</button>
-					<button type="button" id="divide" onclick='divide(this)'>Divide</button>
-					<p>The result is: <span id="result"></span><p>
-				</div>
-			</form>
-		</header>
-		<script>
-			function multiply(){
-				var firstNum=document.getElementById("1stNum").value;
-				var secondNum=document.getElementById("2ndNum").value;
-				if(isNaN(firstNum)||isNaN(secondNum)){
-					alert(' value is not a number!');
-				}
-				var result=firstNum*secondNum;
-				document.getElementById("result").innerHTML=result;
+<head>
+	<title>exerices_1</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="style.css">
+	<style>
+		.row{
+			width:100%;
+			text-align: center;
+		}
+		.col-calu{
+			border:1px solid;
+			margin:auto;
+			width:15%;
+		}
+	</style>
+</head>
+<body>
+	<form action="." method="post">
+		<div class="row">
+			<div class="col-calu">
+				<lable>FirstNum:</lable>
+				<input id="1stNum" type="text" name="1stNum" placeholder="Enter 1st number ..."><br>
+				<label>SecondNum:</label>
+				<input id="2ndNum" type="text" name="2ndNum" placeholder="Enter 2nd number..."><br>
+				<input type="button" name="Multiply" onclick="multiply()" value="Multiply">
+				<input type="button" name="Divide" onclick="divide()" value="devide">
+				<p>The result is: <span id="result"></span><p>
+			</div>
+		</div>
+	</form>
+	<script>
+		function multiply(){
+			var firstNum=document.getElementById("1stNum").value;
+			var secondNum=document.getElementById("2ndNum").value;
+			if(isNaN(firstNum)||isNaN(secondNum)){
+				alert(' value is not a number!');
 			}
-			function divide(){
-				var firstNum=document.getElementById("1stNum").value;
-				var secondNum=document.getElementById("2ndNum").value;
-				if(isNaN(firstNum)||isNaN(secondNum)){
-					alert(' value is not a number!');
-				}
-				var result=firstNum/secondNum;
-				document.getElementById('result').innerHTML=result;
+			var result=firstNum*secondNum;
+			document.getElementById("result").innerHTML=result;
+		}
+		function divide(){
+			var firstNum=document.getElementById("1stNum").value;
+			var secondNum=document.getElementById("2ndNum").value;
+			if(isNaN(firstNum)||isNaN(secondNum)){
+				alert(' value is not a number!');
 			}
-		</script>
-	</body>
+			var result=firstNum/secondNum;
+			document.getElementById('result').innerHTML=result;
+		}
+	</script>
+</body>
 </html>
