@@ -10,11 +10,29 @@
 	font-size:16px;
 	text-align: center;
 	overflow: hidden;
-	max-height: 550px;
+	max-height: 600px;
 }
 .icon-group{
 	color:white;
 	font-weight:500;
+}
+.heading::before{
+	content:"";
+	background-color: gray;
+	width: 100%;
+	height: 1px;
+	left: 0;
+	position: absolute;
+	z-index:-1;
+}
+.heading-social:before{
+	top:15px;
+}
+.heading-regsiter:before{
+	top:110px;
+}
+.heading-login:before{
+	top:386px;
 }
 .icon{
 	width:10%;
@@ -47,9 +65,6 @@
 }
 .form-group{
 	line-height: 40px;
-}
-hr{
-
 }
 .row hr h3{
 	float:left;

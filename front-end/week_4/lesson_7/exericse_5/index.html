@@ -26,19 +26,19 @@
 					</ul>
 					<div class="carousel-inner">
 						<div class="carousel-item active">
-							<img class="img-fluid" src="slide-01.jpg" alt="slide..">
+							<img class="img-fluid" src="img/slide-01.jpg" alt="slide..">
 						</div>
 
 						<div class="carousel-item">
-							<img class="img-fluid" src="slide-02.jpg" alt="slide..">
+							<img class="img-fluid" src="img/slide-02.jpg" alt="slide..">
 						</div>
 
 						<div class="carousel-item">
-							<img class="img-fluid" src="slide-03.jpg" alt="slide..">
+							<img class="img-fluid" src="img/slide-03.jpg" alt="slide..">
 						</div>
 
 						<div class="carousel-item">
-							<img class="img-fluid" src="slide-04.jpg" alt="slide..">
+							<img class="img-fluid" src="img/slide-04.jpg" alt="slide..">
 						</div>
 					</div>
 					<a class="carousel-control-prev" href="#sidebar" data-slide="prev">
@@ -64,12 +64,12 @@
 						<input type="password" name="Password" class="form-control" id='passWord' required>
 						<div class="valid-feedback">Valid</div>
 						<div class="invalid-feedback">Please fill this field</div>
-						<lable class="blue-text">Comfim code<span class="red-badge">*</span><span><img  src="capchaz.jpg" width="100"></span></lable>
+						<lable class="blue-text">Comfim code<span class="red-badge">*</span><span><img  src="img/capchaz.jpg" width="100"></span></lable>
 						<input type="text" name="capcha" class="form-control" id='capcha' required>
 						<br>
 						<input type="button" class="btn btn-success btn-block" name="register" value="Register member!" onclick="success(this)">
 						<br>
-						<p class="text_center gray-text">---------<span>Do you have an account?</span>---------</p>
+						<p class="text_center gray-text"><span class="heading heading-regsiter">Do you have an account?</span></p>
 						<br>
 						<a type="button" name="login" class="btn btn-outline-dark  btn-block" id="login-button" onclick="login()">
 							Login
@@ -89,7 +89,7 @@
 						<input type="checkbox" name="terms" id="agreeCheck" onclick="check()" required><!--cải tiến thêm cái popup để hiện term-->
 						<label>I agree terms</label>
 						<button type="submit" name="login" class="btn btn-outline-dark btn-block" onclick="success(this)" id="loginCheck" disabled>Login</button>
-						<p class="text_center gray-text">---------<span>Don't have an account?</span>---------</p>
+						<p class="text_center gray-text"><span class="heading heading-login">Don't have an account?</span></p>
 						<button type="submit" name="login" class="btn btn-outline-dark btn-block" id="register-button" onclick="register()">Register</button>
 					</div>
 				</form>
@@ -112,14 +112,12 @@
 		var x=document.getElementById("register-form");
 		var y=document.getElementById("login-form");
 		function login(){
-			x.style.right="-400px";
-			y.style.left="25px";
 			x.style.display="none";
+			y.style.left="15px";
 			y.style.display="inline-block";
+			
 		}
 		function register(){
-			x.style.right="45px";
-			y.style.left="450px";
 			y.style.display="none";
 			x.style.display="inline-block";
 		}

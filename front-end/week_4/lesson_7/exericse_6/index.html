@@ -8,13 +8,13 @@
 <body>
 	<div class="container">
 		<div class="row-login" id="Login">
-			<h3>------Login with------</h3>
+			<h3><span class="heading heading-social">Login with</span></h3>
 			<div class="icon-group">
 				<button class="facebook icon"><span><img src="facebook.png" > </span>Facebook</button>
 				<button class="google icon" ><span><img src="google.png" > </span>Google</button>
 				<button class="phone icon"><span><img src="phone.png" > </span>Phone</button>
 			</div>
-			<h3>------Or------</h3>
+			<h3><span class=" heading heading-regsiter">Or</span></h3>
 				<form action="." method="post">
 					<div class="form-group">
 						<label class="blue-text">Email<span class=red-bagde>*</span></label><br>
@@ -30,64 +30,14 @@
 						<button type="submit" class="Login-button" onclick="login()">Login<span class="ico-login"><img src="" alt=""></span></button>
 					</div>
 				</form>
-				<p>-----Don't have an account------</p>
-				<button type="button" class="regsiter" onclick="change_re()">Regsiter</button>
+				<p><span class="heading heading-login">Don't have an account</span></p>
+				<button type="button" class="regsiter" >Regsiter</button>
 			</div>
 
-			<div class="row-regsiter" id="Regsiter">
-			<h3>------Regsiter with------</h3>
-			<div class="icon-group">
-				<button class="facebook"><span><img src="facebook.png" id="icon"> </span>Facebook</button>
-				<button class="google" ><span><img src="google.png" id="icon"> </span>Google</button>
-				<button class="phone"><span><img src="phone.png" id="icon"> </span>Phone</button>
-			</div>
-			<h3>------Or------</h3>
-				<form action="." method="post">
-					<div class="form-group">
-						<label class="blue-text">Email<span class=red-bagde>*</span></label><br>
-						<input type="email" name="email" class="form-control" required>
-						<label class="blue-text">Password<span class="red-bagde">*</span></label><br>
-						<input type="password" name="password" class="form-control" required>
-						<label class="blue-text">Password Again<span class="red-bagde">*</span></label><br>
-						<input type="password" name="password" class="form-control" required>
-						<div class="col-checkbox">
-						<input type="checkbox" name="remember-password" id="agree" onclick="check_term()"><lable>I agree terms!</label>
-						</div>
-						<div class="col-forgot">
-							<a href="#" class="forgot-pass">Forgot password</a>
-						</div>
-						<button type="submit" class="Login-button" onclick="login()" id="regsiterButton" disabled>Regsiter<span class="ico-login"><img src="" alt=""></span></button>
-					</div>
-				</form>
-				<p>----- have an account------</p>
-				<button type="button" class="regsiter" onclick="change_log()">Login</button>
-			</div>
 	</div>
 	<script>
 		function login(){
 			alert("Login success");
-		}
-		function check_term(){
-			if(document.getElementById("agree").checked){
-				document.getElementById("regsiterButton").disabled=false;
-			}
-			else{
-				document.getElementById("regsiterButton").disabled=true;
-			}
-		}
-		var x=document.getElementById("Login");
-		var y=document.getElementById("Regsiter");
-		function change_log(){
-			x.style.left="0";
-			y.style.left="450px";
-			x.style.transition="1s";
-			y.style.transition="1s";
-		}
-		function change_re(){
-			x.style.left="-400px";
-			y.style.left="0";
-			x.style.transition="1s";
-			y.style.transition="1s";
 		}
 	</script>
 </body>
