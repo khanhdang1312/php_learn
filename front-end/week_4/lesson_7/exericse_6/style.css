@@ -1,0 +1,113 @@
+.container{
+	font-family:'Nunito';
+	color:gray;
+	text-shadow: 1px 1px;
+	width:30%;
+	margin:auto;
+	border: 15px solid rgb(44,67,150);
+	padding: 20px;
+	box-sizing: border-box;
+	font-size:16px;
+	text-align: center;
+	overflow: hidden;
+	max-height: 600px;
+}
+.icon-group{
+	color:white;
+	font-weight:500;
+}
+.heading::before{
+	content:"";
+	background-color: gray;
+	width: 100%;
+	height: 1px;
+	left: 0;
+	position: absolute;
+	z-index:-1;
+}
+.heading-social:before{
+	top:15px;
+}
+.heading-regsiter:before{
+	top:110px;
+}
+.heading-login:before{
+	top:386px;
+}
+.icon{
+	width:10%;
+	display:inline-block
+}
+.facebook{
+	border: none;
+	background-color:blue;
+	padding:8px 6px;
+	width: 32%;
+}
+.google{
+	border: none;
+	background-color: red;
+	padding:8px 6px;
+	width: 32%;
+}
+.phone{
+	border: none;
+	background-color: green;
+	padding:8px 6px;
+	width: 32%;
+}
+.row{
+	width:100%;
+}
+.form-control{
+	width:100%;
+	padding:7px;
+}
+.form-group{
+	line-height: 40px;
+}
+.row hr h3{
+	float:left;
+}
+.row hr p{
+	float:left;
+}
+.col-checkbox{
+	width:48%;
+	text-align: left;
+	display: inline-block;
+}
+.col-forgot{
+	width:48%;
+	text-align:right;
+	display: inline-block;
+}
+.col-forgot a{
+	text-decoration: none;
+}
+.red-bagde{
+	color:red;
+}
+.blue-text{
+	float:left;
+	color:lightblue;
+}
+.Login-button{
+	width:100%;
+	padding: 7px;
+	border: none;
+	background-color: lightblue;
+}
+.regsiter{
+	width:100%;
+	padding: 7px;
+	border: 1px solid;
+}
+.row-regsiter{ 
+	position:relative;
+	left: 450px;
+	top:-485px;
+}
+.row-login{
+	position:relative;
+}

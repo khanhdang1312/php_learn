@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exericse_4</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<form action='.' method="post" class="form-group">
+			<h4 class="register">Register member</h4>
+			<h5 class="input-title">Fill your's information! </h5>
+			<input type="text" name="firstName" class="first_name form_item" placeholder="Enter your's first's name " required><br><br>
+			<input type="text" name="lastName" class="last_name form_item" placeholder="Enter your's last's name"required><br><br>
+			<input type="text" name="userName" class="user_name form_item" placeholder="Enter username" required><br><br>
+			<input type="email" name="email" class="email form_item" placeholder="Enter your's email" required><br><br>
+			<input type="password" name="password" class="password form_item" placeholder="Enter your's password" required><br><br>
+			<input type="password" name="password-again" class="password-again form_item" placeholder="Enter password again." required><br><br>
+
+			<b class="left-text">Gender</b>
+	 			<input type="radio" name="gender" value="male">
+	 			<label for="male">Male</label>
+	 			<input type="radio" name="gender" value="N/a">
+	 			<label for="N/a">Other</label>
+	 			<input type="radio" name="gender" value="female">
+	 			<label for="female">Female</label>
+	 			<br><br>
+	 			<input type="date" name="birthday" class="form_item" required><br><br>
+	 			<input type="text" name="sign" placeholder="Eter your's sign" class="form_sign form_item"><br><br>
+	 			<input list="templeQuestion" name="question" class="form_item" placeholder="Temple question" required><br><br>
+	 			<datalist id="templeQuestion">
+	 				<option value="where are you?.."></option>
+	 			</datalist>
+	 			<input type="text" name="answers" class="form_item" placeholder="Answers" required><br><br>
+	 			<input type="checkbox" name="agree" id="checkAgree" onclick="check()" required disabled>
+	 			<label for="agree">I agree with</label>
+	 			<input type="button" name="rules" id="terms" onclick="change()" value="Our register terms">
+	 			<br><br>
+	 			<input type="reset" name="reset" id="reset" value="Reset" onclick="window.location.reload();">
+	 			<input type="submit" name="submit" id='register' value="Register" disabled>
+		</form>
+	</div>
+	<script>
+		function change(){
+				document.getElementById('checkAgree').disabled=false;
+		}
+		function check(){
+			if(document.getElementById('checkAgree').checked){
+				document.getElementById('register').disabled=false;
+			}
+			else{
+				document.getElementById('register').disabled=true;
+			}
+		}
+	</script>
+</body>
+</html>

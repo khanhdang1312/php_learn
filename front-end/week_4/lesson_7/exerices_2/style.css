@@ -1,0 +1,29 @@
+.container{
+	width:85%;
+	font-family:'Nunito';
+	text-align: center;
+	margin:auto;
+}
+.title-60{
+	font-size:60px;
+	color:yellow;
+
+}
+.row-imb-windowns{
+	padding:10px;
+	width:100%;
+}
+.row-apple-google{
+	padding:10px;
+	width:100%;
+}
+.col-content{
+	text-align: center;
+	width:48%;
+	display: inline-block;
+}
+.logo-img{
+	width:50%;
+	max-height: 150px;
+	min-height: 74px;
+}

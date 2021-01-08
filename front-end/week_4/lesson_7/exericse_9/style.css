@@ -1,0 +1,22 @@
+.container{
+	width: 35%;
+	margin:auto;
+	box-shadow: 2px 4px 10px yellow;
+	box-sizing: border-box;
+	font-family: "Nunito";
+	padding: 20px;
+}
+.food-intro-img{
+	width:100%;
+	padding-right:20px; 
+}
+.teach-cook-video{
+	width: 90%;
+}
+.container a{
+	text-decoration: none;
+	color:green;
+}
+.container a:hover{
+	color:red;
+}

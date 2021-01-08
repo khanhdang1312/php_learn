@@ -1,0 +1,58 @@
+.container{
+	padding: 30px;
+	font-size: 18px;
+}
+.text-content-top{
+	color:gray;
+	line-height: 40px;
+	width:40%;
+	float:left;
+}
+.img-content-top{
+	width:50%;
+	float:right;
+	border:none;
+}
+.bold{
+	font-weight:600;
+}
+.btn-top{
+	margin-top:15px; 
+	padding:10px;
+	background-color: lightblue;
+	border:none;
+	font-size: 14px;
+	border-radius: 12px;
+}
+.btn-top:hover{
+	background-color: pink;
+	color:white;
+	transition: 0.5;
+}
+.text-content-bottom{
+	color:gray;
+	line-height: 40px;
+	width:40%;
+	float:right;
+}
+.img-content-bottom{
+	width:50%;
+	float:left;
+}
+.btn-bottom{
+	margin-top:15px; 
+	padding:10px;
+	background-color: lightblue;
+	border:none;
+	font-size: 14px;
+	border-radius: 12px;
+}
+.btn-bottom:hover{
+	background-color: pink;
+	color:white;
+	transition: 0.5;
+}
+.line{
+	width:80%;
+	background-color:red;
+}
