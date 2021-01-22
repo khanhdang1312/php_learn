@@ -35,7 +35,7 @@
 					<br>
 					<h6 class="career-infor">CAREER GOBALS</h6>
 					<p>Xin chào nhà tuyển dụng</p>
-					<p>Tên tôi là <span class="fullName"></span>,Một nhân viên khách sạn tuổi trẻ đầy đam mê và nhiệt huyết với những kiến thức mà tôi đã học hỏi được cùng với sự sáng tạo ,kinh nghiệm tinh thần trách nhiệm trong công việc , tôi hi vọng costheer  dóng góp một phần nhỏ của mình cho sự phát triển của công ty .</p>
+					<p>Tên tôi là <span id="full-name"></span>,Một nhân viên khách sạn tuổi trẻ đầy đam mê và nhiệt huyết với những kiến thức mà tôi đã học hỏi được cùng với sự sáng tạo ,kinh nghiệm tinh thần trách nhiệm trong công việc , tôi hi vọng costheer  dóng góp một phần nhỏ của mình cho sự phát triển của công ty .</p>
 					<h6 class="career-infor">DEGREE</h6>
 					<p><b>Đại học dân lập Jobgo</b><p>
 					<input type="date" class="date-left"><br>
@@ -154,6 +154,7 @@
 		function changeName(){
 			var changeName=document.getElementById("inputName").value;
 			document.getElementById("fullName").innerHTML=changeName;
+			document.getElementById("full-name").innerHTML=changeName;
 		}
 		function changeLocal(){
 			var changeLocal=document.getElementById("inputLocal").value;
