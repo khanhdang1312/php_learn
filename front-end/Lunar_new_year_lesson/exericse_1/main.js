@@ -1,6 +1,6 @@
 var findNum=/[0-9]/i;
 var findSpace=/\s/g;
-function VaildateFirstName(vaildFirstName){
+function VaildateFirstName(){
     var vaildFirstName=document.getElementById("vaildFirstName");
     var checkFirstName=document.getElementById("firstName").value;
     var firstName=document.getElementById("firstName");
@@ -31,5 +31,6 @@ function VaildateLastName(){
         lastName.className="border-success"+" "+"form-control";
     }
 }
+$("#dateInput").validate();
 
     

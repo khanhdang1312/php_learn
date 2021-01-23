@@ -8,12 +8,12 @@
         <title>New Year Exericse_1</title>
     </head>
     <body>
-        <div class="container p-5">
-            <div class="row p-5">
-                <div class="col-sm-12 col-md-12 col-lg-12 p-5">
-                    <form class="form-group">
-                        <div class="row">
-                            <div class="col-sm-12 col-md-12 col-lg-12">
+        <div class="container pl-5 pr-5">
+            <div class="row pl-5 pr-5">
+                <div class="col-sm-12 col-md-12 col-lg-12 pl-5 pr-5">
+                    <form class="form-group p-5">
+                        <div class="row p-5">
+                            <div class="col-sm-12 col-md-12 col-lg-12 p-5">
                                 <label>First Name</label>
                                 <input type="text" class="form-control" id="firstName" name="FirstName" placeholder="Enter your first's name" required onchange="VaildateFirstName()">
                                 <p id="vaildFirstName"></p>
@@ -26,7 +26,7 @@
                                 <label for="male">Male</label>
                                 <input type="radio" name="gender">
                                 <label for="female">Female</label><br>
-                                <input type="date" name="birthday" id="birthDay" class="form-control"><br>
+                                <input type="date" name="birthday" id="birthDay" class="form-control" max="23-1-2006" min="23-01-1940"><br>
                                 <input type="submit" class="btn btn-primary" value="Submit" id="subMit">
                             </div>
                         </div>
