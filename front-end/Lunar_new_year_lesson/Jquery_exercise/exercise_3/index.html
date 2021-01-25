@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bs/css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-4 col-lg-4"></div>
+            <div class="col-sm-12 col-md-4 col-lg-4">
+                <form action="." method="post" class="form-group">
+                    <label>Name:</label>
+                    <input type="text" name="Name" id="name" class="form-control">
+                    <p id="checkName"></p>
+                    <label>Email:</label>
+                    <input type="text" name="Email" id="email" class="form-control">
+                    <p id="checkEmail"></p>
+                    <br>
+                    <select name="Countries" id="selectCountries">
+                        <option value="select-country">select-country</option>
+                        <option value="Vietnamese">Vietnamese</option>
+                        <option value="Japan">Japan</option>
+                        <option value="USA">USA</option>
+                    </select><br>
+                    <br>
+                    <input type="submit" value="Send info" id="submit">
+                </form>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4"></div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
