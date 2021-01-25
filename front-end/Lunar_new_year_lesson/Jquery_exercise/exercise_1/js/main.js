@@ -1,15 +1,15 @@
-var calculator=document.getElementById("calculator");
-calculator.addEventListener("click",myfunction);
-function myfunction()
+var calculator=document.getElementById("calculator")
+calculator.addEventListener("click",function()
     {
-        var length=document.getElementById("length").value;
-        var width=document.getElementById("width").value;
-        if(isNaN(length)||isNaN(width)){
-            window.alert("GIÁ TRỊ NHẬP VÀO KHÔNG PHẢI LÀ SỐ");
-        }
-        else{
-            var perimeter=(parseFloat(length)+parseFloat(width))*2;
-            document.getElementById("perimeter").innerHTML=perimeter;
-            document.getElementById("area").innerHTML=length*width;
+        var MaxNum=document.getElementById("number").value;
+        for(var i=0;i<MaxNum;i++){
+            if(i%2==0){
+                document.getElementById("evenNumber").innerHTML+=i+" ";
+            }
+            else{
+                document.getElementById("oddNumber").innerHTML+=i+" ";
+            }
         }
     }
+);
+console.log(calculator);
