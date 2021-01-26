@@ -3,36 +3,35 @@
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="bs/css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/style.css">
-        <script src="main.js"></script>
         <title>New Year Exericse_1</title>
     </head>
     <body>
         <div class="container pl-5 pr-5">
             <div class="row pl-5 pr-5">
                 <div class="col-sm-12 col-md-12 col-lg-12 pl-5 pr-5">
-                    <form class="form-group p-5">
+                    <form class="form-group p-5" action="." id="inputForm">
                         <div class="row p-5">
                             <div class="col-sm-12 col-md-12 col-lg-12 p-5">
                                 <label>First Name</label>
-                                <input type="text" class="form-control" id="firstName" name="FirstName" placeholder="Enter your first's name" required onchange="VaildateFirstName()">
+                                <input type="text" class="form-control" id="firstName" name="FirstName" placeholder="Enter your first's name" required>
                                 <p id="vaildFirstName"></p>
                                 <br>
                                 <label>Last Name</label>
-                                <input type="text" class="form-control" id="lastName" name="LastName" placeholder="Enter your last name "required onchange="VaildateLastName()">
+                                <input type="text" class="form-control" id="lastName" name="LastName" placeholder="Enter your last name" required>
                                 <p id="vaildLastName"></p>
                                 <br>
                                 <input type="radio" name="gender">
                                 <label for="male">Male</label>
-                                <input type="radio" name="gender">
+                                <input type="radio" name="gender" >
                                 <label for="female">Female</label><br>
                                 <input type="date" name="birthday" id="birthDay" class="form-control" max="23-1-2006" min="23-01-1940"><br>
-                                <input type="submit" class="btn btn-primary" value="Submit" id="subMit">
+                                <input type="submit" class="btn btn-primary" value="Submit" id="subMit" onclick="CheckGender()">
                             </div>
                         </div>
                     </form>
                 </div>
             </div>        
         </div>
+        <script src="main.js"></script>
     </body>
 </html>
