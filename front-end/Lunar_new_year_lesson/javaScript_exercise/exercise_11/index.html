@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bs/css/bootstrap.min.css">
+    <title>js new year ex_8</title>
+    <style>
+        .products-table p{
+            margin:0;
+            color: gray!important;
+            text-align: left;
+        }
+        .main-content{
+            background-color: #7EC855;
+            padding: 80px;
+            padding-bottom:140px;
+            font-family: "Roboto";
+            background-size: cover;
+        }
+        .products-table{
+            background-color: white;
+            box-shadow: 1px 2px 3px rgba(0,0,0,0.1);
+            border-radius: 12px;
+        }
+        .products-table h5{
+            color: #5E6977;
+            font-size: 18px;
+        }
+        .products-table input{
+            width:10%;
+            border: none;
+        }
+        .products-table td,.products-table th{
+            vertical-align:baseline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid main-content">
+        <div class="row pl-5 pr-5">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+                <table class="table products-table text-center">
+                    <thead>
+                        <tr>
+                            <th scope="col"><h5 class="pt-3 pb-3">Shopping Bag</h5></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th scope="col" id="deleteBtn">  
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableBody">
+                        <tr class="products">
+                            <th scope="row">
+                                <input type="checkbox" class="select-products" onclick="deleted(this)" class="pb-0">
+                            </th>
+                            <td>
+                                <button class="btn btn-light btn-clean">X</button>
+                            </td>
+                            <td>
+                                <img src="img/BballHight.png" alt="BballHight" class="img-fluid">
+                            </td>
+                            <td>
+                                <p class="products-desc" id="bballHight" data-baseprices="549">Common project Bball Hight</p>
+                                <p class="text-white products-color">white</p>
+                            </td>
+                            <td>
+                                <button class="btn btn-light" id="kk" onclick="ReduceProducts(this)" data-productsname="BballHight">-</button>
+                                <input type="text" name="quantity" class="text-center" value="1" data-productsname="BballHight">
+                                <button class="btn btn-light" onclick="AddProducts(this)" data-productsname="BballHight">+</button>
+                            </td>
+                            <td>
+                                <h5 name="totalPrices">$549</h5>
+                            </td>
+                        </tr>
+                        <tr class="products">
+                        <th scope="row">
+                            <input type="checkbox" class="select-products" onclick="deleted(this)" class="pb-0">
+                        </th>
+                            <td>
+                                <button class="btn btn-light btn-clean">X</button>
+                            </td>
+                            <td>
+                                <img src="img/Margiela.png" alt="Margiela" class="img-fluid">
+                            </td>
+                            <td>
+                                <p class="products-desc" id="sneakers" data-baseprices="870">Maison Margiela Future Sneakers</p>
+                                <p class="text-white products-color">white</p>
+                            </td>
+                            <td>
+                                <button class="btn btn-light" onclick="ReduceProducts(this)" data-productsname="sneakers">-</button>
+                                <input type="text" name="quantity" class="text-center" value="1" data-productsname="sneakers"> 
+                                <button class="btn btn-light" onclick="AddProducts(this)" data-productsname="sneakers">+</button>
+                            </td>
+                            <td>
+                                <h5 name="totalPrices">$870</h5>
+                            </td>
+                    </tr>
+                    <tr class="products">
+                        <th scope="row">
+                            <input type="checkbox" class="select-products" onclick="deleted(this)" class="pb-0">
+                        </th>
+                            <td>
+                                <button class="btn btn-light btn-clean">X</button>
+                            </td>
+                            <td>
+                                <img src="img/Brushed-scarf.png" alt="Brushed-scarf" class="img-fluid">
+                            </td>
+                            <td>
+                                <p class="products-desc" id="BrushedScarf" data-baseprices="349">Our legacy Brushed scarf</p>
+                                <p class="text-white products-color">Brown</p>
+                            </td>
+                            <td>
+                                <button class="btn btn-light" id="kk" onclick="ReduceProducts(this)" data-productsname="BrushedScarf">-</button>
+                                <input type="text" name="quantity" class="text-center" value="1" data-productsname="BrushedScarf">
+                                <button class="btn btn-light" onclick="AddProducts(this)" data-productsname="BrushedScarf">+</button>
+                            </td>
+                            <td>
+                                <h5 name="totalPrices">$349</h5>
+                            </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
