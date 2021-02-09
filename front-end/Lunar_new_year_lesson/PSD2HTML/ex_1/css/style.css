@@ -1,0 +1,74 @@
+.main-content{
+    font-family: "Inknut Antiqua";
+}
+.navbar-slogan{
+    font-size: 60%;
+}
+.bg-nav{
+    background-color: black;
+}
+.navbar .nav-link{
+    color:white!important;
+    font-size: 80%;
+    padding: 5px 20px;
+    border-radius: 10px;
+}   
+.navbar .nav-link:hover{
+    color: yellow!important;
+}
+.navbar .active{
+    background-color:rgb(23 255 248 / 70%)!important;
+}
+.font-weight-normal{
+    font-weight:450!important;
+}
+.card-services{
+    box-shadow: 2px 2px 5px black;
+    text-align: center;
+}
+.card-profile .card-img{
+    height:225px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+.card-profile{
+    text-align: center;
+}
+.bg-footer{
+    background-color:#303030!important;
+    color:#ffffff;
+}
+.footer-content a{
+    color: #40aed7;
+}
+.footer-content a:hover{
+    color: lightblue;
+    text-decoration: none;
+}
+.footer-content{
+    color:#666666;
+}
+.footer-title{
+    color:white;
+}
+.footer-content input,.footer-content textarea{
+    background-color:#222222;
+    border: none;
+}
+.text-gray{
+    color: #d3d3d3;
+}
+.card-services:hover{
+    background-color:#40aed7;
+    color: white;
+    cursor: pointer;
+}
+.card-services:hover>.card-img-top{
+    width:100%!important;
+    transition:0.4s;
+}
+.card-img-top{
+    transition: 0.4s;
+    width: 0!important;
+}

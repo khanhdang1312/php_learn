@@ -1,0 +1,49 @@
+.text-brown{
+    color: #ff7c7c!important;
+}
+main a:hover,footer a:hover{
+    text-decoration: none;
+}
+.body-content{
+    background-color: #3d585c;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 400;
+}
+@media (max-width:636px){
+    .body-content{
+        text-align: center;
+    }
+}
+#searchField,.search-btn{
+    background-color: #304649!important;
+    outline: none;
+    border:none;
+    border-radius: 0!important;
+    float:right;
+}
+.search-btn{
+    background-color:#3e3e3e!important ;
+}
+.navbar-breadcrumb{
+    background-color: transparent!important;
+}
+.navbar a{
+    color: #9eabad!important;
+}
+.navbar .nav-link:hover{
+    color:#ff7c7c!important;
+}
+.bg-nav{
+    background-image: linear-gradient(to top,#252525,#414141);
+}
+.img-slide{
+    width:100%;
+    height:auto;
+}
+main{
+    background-color: black;
+    color:white;
+}
+.bg-footer{
+    background-color: #f2f2f2!important;
+}

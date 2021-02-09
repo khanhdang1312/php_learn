@@ -1,0 +1,70 @@
+.fab{
+    font-size:18px;
+    color: white;
+}
+.social-nav .nav-link{
+    background-color: black;
+    border-radius: 50%;
+    padding:4px;
+}
+.social-nav .nav-link:hover{
+    background-color:#ee802f!important;
+}
+.social-nav .nav-item{
+    margin-left:20px;
+}
+.social-nav .nav-link .fa-youtube{
+    padding-top:2px;
+    padding-bottom:2px;
+}
+#search{
+    background-color: black;
+    color: white;
+    border-radius:10px;
+}
+.search-btn{
+    border-radius: 10px;
+}
+.card .card-img{
+    height:160px;
+    background-color: black;
+    text-align: center;
+    /* padding-top: 50%; */
+}
+.card-img-left{
+    height:80px;
+    margin-top: 10px;
+    background-color: black!important;
+    text-align: center;
+    padding: 0.5rem;
+    color: white;
+}
+.card-desc{
+    font-size: 12px;
+}
+.bg-footer{
+    background-color:#252525!important;
+    color:white
+}
+.footer-content input,.footer-content textarea{
+    background-color: black;
+    border:none;
+}
+.footer-content input:focus,.footer-content textarea:focus{
+    background-color: black;
+}
+.social-nav .navbar-nav{
+    flex-direction: row;
+}
+@media (max-width:576px) { 
+    .social-nav .navbar-nav{
+        margin: auto;
+        padding-bottom: 10px;
+    }
+    .social-nav .navbar-nav .nav-link{
+        padding: 8px;
+    }
+    .social-nav .search-form{
+        flex-flow: column wrap;
+    }
+} 
