@@ -1,4 +1,4 @@
-var findNum=/[0-9]/i;
+var parterm=/[0-9]+|\s/g;
 var checkName=document.getElementById("firstName");
 checkName.addEventListener("keyup",CheckFirstName);
 function CheckFirstName(e){
@@ -6,7 +6,7 @@ function CheckFirstName(e){
     var checkKey=e.which||e.keyCode;
     console.log(checkKey);
     if(checkKey==8||checkKey!==8){
-        if(checkFirstName.value.search(findNum)!==-1||checkFirstName.value.length<=0||checkKey==32||checkKey==/[48,57]/i){
+        if(parterm.test(checkFirstName.value)){
             vaildFirstName.className="text-danger";
             vaildFirstName.innerHTML="Tên sai , Tên không được có số hoặc dấu cách";
             vaildFirstName.style.fontSize="14px";
@@ -27,7 +27,7 @@ document.getElementById("lastName").addEventListener("keyup",CheckLastName);
     var vaildLastName=document.getElementById("vaildLastName");
     var checkKey=e.which||e.keyCode;
     if(checkKey==8||checkKey!==8){
-        if(checkLastName.value.search(findNum)!==-1||checkLastName.value.length<=0||checkKey==32||checkKey==/[48,57]/i){
+        if(parterm.test(checkLastName)){
             vaildLastName.className="text-danger";
             vaildLastName.innerHTML="Tên sai , Tên không được có số hoặc dấu cách";
             vaildLastName.style.fontSize="14px";
