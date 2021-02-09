@@ -13,19 +13,17 @@
             <div class="col-sm-12 col-md-4 com-lg-4"></div>
             <div class="col-sm-12 col-md-4 col-lg-4 border border-dark p-2">
                 <h4>What do you want to do today?</h4>
-                <input type="text" name="InputWorks" id="inputWorks" class="form-control"><br>
+                <input type="text" name="InputWorks" id="inputWorks" class="form-control border-dark"><br>
                 <ul class="list-group list-group-flush" id="toDoList">
-                   <li class="list-group-item d-flex justify-content-between align-item-center">
-                       <i class="delete-item"></i>
-                   </li>
+                    <!-- list item will appe here. -->
                </ul>
                <div class="pt-5 container">
                     <div class="row">
                         <div class="col">
-                            <p id="tasks"><span id="checkTask">task</span></p>
+                            <p id="tasks"><b>0 task</b></p>
                         </div>
                         <div class="col text-right">
-                            <button id="btnClear">Clear All</button>
+                            <button id="btnClear" class="btn btn-outline-danger">Clear All</button>
                         </div>
                     </div>
                </div>
