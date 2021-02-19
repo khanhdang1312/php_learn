@@ -1,0 +1,28 @@
+.products-table p{
+    margin:0;
+    color: gray!important;
+    text-align: left;
+}
+.main-content{
+    background-color: #7EC855!important;
+    padding: 80px;
+    padding-bottom:140px;
+    font-family: "Roboto";
+    background-size: cover;
+}
+.products-table{
+    background-color: white;
+    box-shadow: 1px 2px 3px rgba(0,0,0,0.1)!important;
+    border-radius: 12px;
+}
+.products-table h5{
+    color: #5E6977!important;
+    font-size: 18px;
+}
+.products-table input{
+    width:10%;
+    border: none;
+}
+.products-table td,.products-table th{
+    vertical-align:baseline;
+}

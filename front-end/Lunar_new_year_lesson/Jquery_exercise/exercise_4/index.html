@@ -6,6 +6,12 @@
     <link rel="stylesheet" href="bs/css/bootstrap.min.css">
     <link rel="stylesheet" href="fontawe/css/all.min.css">
     <title>New Year exercise_4</title>
+    <style>
+        .todolist{
+            max-height:400px!important;
+            overflow: hidden;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -14,7 +20,7 @@
             <div class="col-sm-12 col-md-4 col-lg-4 border border-dark p-2">
                 <h4>What do you want to do today?</h4>
                 <input type="text" name="InputWorks" id="inputWorks" class="form-control border-dark"><br>
-                <ul class="list-group list-group-flush" id="toDoList">
+                <ul class="list-group list-group-flush todolist" id="toDoList">
                     <!-- list item will appe here. -->
                </ul>
                <div class="pt-5 container">

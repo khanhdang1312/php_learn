@@ -19,7 +19,6 @@ function CheckFirstName(e){
             checkFirstName.className="form-control"+" "+"border-success";
         }
     }
-    
 }
 document.getElementById("lastName").addEventListener("keyup",CheckLastName);
     function CheckLastName(e){
