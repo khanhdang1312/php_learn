@@ -2,14 +2,14 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="bs/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../../bootstrap/bs/css/bootstrap.min.css">
         <title>New Year Exericse_1</title>
     </head>
     <body>
         <div class="container pl-5 pr-5">
             <div class="row pl-5 pr-5">
                 <div class="col-sm-12 col-md-12 col-lg-12 pl-5 pr-5">
-                    <form class="form-group p-5" action="." id="inputForm">
+                    <form class="form-group p-5" action="." id="inputForm" onsubmit="return vaildForms()">
                         <div class="row p-5">
                             <div class="col-sm-12 col-md-12 col-lg-12 p-5">
                                 <label>First Name</label>
@@ -25,7 +25,7 @@
                                 <input type="radio" name="gender" >
                                 <label for="female">Female</label><br>
                                 <input type="date" name="birthday" id="birthDay" class="form-control" required><br>
-                                <input type="submit" class="btn btn-primary" value="Submit" id="subMit" onclick="CheckGender()">
+                                <input type="submit" class="btn btn-primary" value="Submit">
                             </div>
                         </div>
                     </form>
