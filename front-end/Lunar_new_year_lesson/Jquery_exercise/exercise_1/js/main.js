@@ -5,12 +5,17 @@ calculator.addEventListener("click",function()
         if (isNaN(MaxNum)){
             aler("Giá trị không phải là số!")
         }
-        for(var i=0;i<MaxNum;i++){
-            if(i%2==0){
-                document.getElementById("evenNumber").innerHTML+=i+" ";
-            }
-            else{
-                document.getElementById("oddNumber").innerHTML+=i+" ";
+        else if(MaxNum==0){
+            alert("Value can not equal 0");
+        }
+        else{
+            for(var i=0;i<MaxNum;i++){
+                if(i%2==0){
+                    document.getElementById("evenNumber").innerHTML+=i+" ";
+                }
+                else{
+                    document.getElementById("oddNumber").innerHTML+=i+" ";
+                }
             }
         }
     }

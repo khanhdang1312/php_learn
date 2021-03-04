@@ -17,7 +17,7 @@ function checkEmail(){
         email.focus();
     }
    else{
-       if(email.value==/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/){
+       if(email.value.match(/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/)){
         document.getElementById("vaildEmail").className="text-light";
        }
        else{

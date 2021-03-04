@@ -8,13 +8,13 @@ document.getElementById("submit").addEventListener("click",function(){
         alert("value is not number!");
     }
     else{
-        document.getElementById("typeOf").innerHTML=aValue+"x"+" "+"+"+" "+bValue;
+        document.getElementById("typeOf").innerHTML=aValue+"x"+" "+" "+bValue;
         if (aValue==0){
-            document.getElementById("result").innerHTML="Phương trình có vô số nghiệm!";
+            document.getElementById("result").innerHTML="Phương trình vô nghiệm!";
         }
         else{
-            if(bValue>0){
-                result=(-bValue)/aValue;
+            if(bValue!==0){
+                result=-bValue/aValue;
                 document.getElementById("result").innerHTML="Phương trình có nghiệm là :"+result;
             }
             else{

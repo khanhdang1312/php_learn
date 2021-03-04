@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="bs/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../bootstrap/bs/css/bootstrap.min.css">
     <title>Document</title>
 </head>
 <body>
@@ -11,22 +11,22 @@
         <div class="row">
             <div class="col-sm-12 col-md-4 col-lg-4"></div>
             <div class="col-sm-12 col-md-4 col-lg-4">
-                <form action="." method="post" class="form-group">
+                <form action="." method="post" id="formGroup" onsubmit="return vaildForm()">
                     <label>Name:</label>
-                    <input type="text" name="Name" id="name" class="form-control">
+                    <input type="text" name="Name" id="name" class="form-control" required>
                     <p id="checkName"></p>
                     <label>Email:</label>
-                    <input type="text" name="Email" id="email" class="form-control">
+                    <input type="email" name="Email" id="email" class="form-control" required>
                     <p id="checkEmail"></p>
                     <br>
                     <select name="Countries" id="selectCountries">
-                        <option value="select-country">select-country</option>
-                        <option value="Vietnamese">Vietnamese</option>
-                        <option value="Japan">Japan</option>
+                        <option value="-1">select-country</option>
+                        <option value="1">Vietnamese</option>
+                        <option value="2">Japan</option>
                         <option value="USA">USA</option>
                     </select><br>
                     <br>
-                    <input type="submit" value="Send info" id="submit">
+                    <input type="submit">
                 </form>
             </div>
             <div class="col-sm-12 col-md-4 col-lg-4"></div>
