@@ -1,18 +1,18 @@
 .bg-content{
-            background-color:#ecf0f1!important;
-            box-sizing:border-box;
-            font-family: "Nunito";
-        }
-        .bg-content p{
-            color: gray;
-        }
-        .card-services{
-            box-shadow: 1px 1px 5px gray;
-            font-weight: 700;
-        }
-        .btn-sub{
-            background-color:#e74c3c!important;
-        }
-        .bg-nav{
-            background-color:#e74c3c!important!important;
-        }
+    background-color:#ecf0f1!important;
+    box-sizing:border-box;
+    font-family: "Nunito";
+}
+.bg-content p{
+    color: gray;
+}
+.card-services{
+    box-shadow: 1px 1px 5px gray;
+    font-weight: 700;
+}
+.btn-sub{
+    background-color:#e74c3c!important;
+}
+.bg-nav{
+    background-color:#e74c3c!important;
+}
