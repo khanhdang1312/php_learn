@@ -1,6 +1,5 @@
 <?php
 session_start();
-
 ?>
 <!doctype html>
 <html>
@@ -23,10 +22,8 @@ session_start();
         <button type="reset">Reset</button>
     </form>
 <?php
-if ($_SERVER['REQUEST_METHOD']=='POST'){
-    $_SESSION['name']=$_POST['user-name'];
-    $_SESSION['password']=$_POST['password'];
-}
+$_SESSION['name']=$_POST['user-name'];
+$_SESSION['password']=$_POST['password'];
 ?>
 </body>
 </html>
