@@ -1,0 +1,153 @@
++ CREATE TABLE `staff` (
+	`staff_first_name` VARCHAR(25) NULL DEFAULT NULL,
+	`staff_last_name` VARCHAR(25) NULL DEFAULT NULL,
+	`staff_full_name` VARCHAR(50) NOT NULL,
+	`staff_gender` VARCHAR(10) NULL DEFAULT NULL,
+	`staff_salary` INT(11) NULL DEFAULT NULL,
+	`staff_id` VARCHAR(11) NOT NULL,
+	`staff_birthday` DATE NULL DEFAULT NULL,
+	`staff_address` VARCHAR(255) NULL DEFAULT NULL,
+	`staff_department` INT(11) NULL DEFAULT NULL,
+	PRIMARY KEY (`staff_id`)
+)
++insert :
+INSERT INTO staff(
+		staff_first_name,
+		staff_last_name,
+		staff_full_name,
+		staff_genger,
+		staff_id,
+		staff_salary,
+		staff_address,
+		staff_birthday,
+		staff_departmemt
+
+)
+VALUES
+(
+
+	"Dang Van",
+	"Dat",
+	"Dang Van Dat",
+	"nam",
+	"123456781",
+	2000,
+	"Ha Noi",
+	DATE "1977-04-20",
+	2	
+),
+(
+
+	"Dao Hong",
+	"Nhung",
+	"Dao Hong Nhung",
+	"nu",
+	"123456792",
+	200,
+	"Ha Noi",
+	DATE "1997-04-20",
+	4	
+);
+
+
++CREATE TABLE `departments` (
+	`department_name` VARCHAR(100) NULL DEFAULT NULL,
+	`department` INT(11) NOT NULL,
+	PRIMARY KEY (`department`)
+)
+INSERT INTO departments(
+	department_name,
+	department
+)
+VALUES ("Nhan Su",1)
+,("Ke Hoach",2),("Kinh Doanh",3)
+,("Marketing",4)
+,("Ke Toan",5);
+
++CREATE TABLE `projects` (
+	`projects_name` VARCHAR(255) not NULL,
+	`projects_id` INT(11) NOT NULL,
+	`project_location` VARCHAR(50) NULL DEFAULT NULL,
+	`department` INT(11) NULL DEFAULT NULL,
+	PRIMARY KEY (`projects_id`)
+)
+
+
+INSERT INTO projects(
+	projects_name,
+	projects_id,
+	project_location,
+	department
+)
+VALUES("San Pham X",1,"Quy Nhon",3),
+("San Pham Y",2,"Nha Trang",2),
+("San Pham Z",3,"HCM",1),
+("Tin Hoc Hoa",10,"Binh Duong",3);
+
+
+
++CREATE TABLE `staff_division` (
+	`staff_id` varchar (11) not null,
+	`projects_id` INT(11) not null,
+	`projects_time` FLOAT NULL DEFAULT NULL
+)
+insert into `staff_division` (
+	`staff_id` ,
+	`projects_id`,
+	`projects_time` 
+)
+values (
+	"123456781",
+	1,
+	32.0
+),
+values (
+	"123456782",
+	2,
+	22.0
+),
+values (
+	"123456783",
+	3,
+	12.0
+),
+values (
+	"123456789",
+	2,
+	42.0
+),
+values (
+	"123456792",
+	3,
+	22.0
+);
+quest 1:
++select *from  staff;
+quest2:
+select *form  staff
+where staff_department=5;
+quest3:
+select staff_first_name,staff_last_name,staff_full_name from staff
+where staff_department=5 and staff_salary>=3000;
+quest4:
+select staff_id,staff_full_name  from  staff 
+where staff_salary >=2000 and staff_salary <=8000;
+quest5:
+select *from staff 
+where staff_adderss like "nguyen";
+quest:6
+select count (*) from staff; 
+quest7:
+select count (*) from staff
+where staff_department =1;
+select count (*) from staff
+where staff_department =2;
+select count (*) from staff
+where staff_department =3;
+select count (*) from staff
+where staff_department =4;
+select count (*) from staff
+where staff_department =5;
+quest8:
+select * from staff
+where staff_department=5;
